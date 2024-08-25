@@ -7,8 +7,6 @@ You are given two strings word1 and word2. Merge the strings by adding letters i
 
 Return the merged string.
 
-
-
 Example 1:
 
 Input: word1 = "abc", word2 = "pqr"
@@ -47,8 +45,6 @@ For two strings s and t, we say "t divides s" if and only if s = t + t + t + ...
 
 Given two strings str1 and str2, return the largest string x such that x divides both str1 and str2.
 
-
-
 Example 1:
 
 Input: str1 = "ABCABC", str2 = "ABC"
@@ -61,7 +57,6 @@ Example 3:
 
 Input: str1 = "LEET", str2 = "CODE"
 Output: ""
-
 
 Constraints:
 
@@ -77,7 +72,6 @@ There are n kids with candies. You are given an integer array candies, where eac
 Return a boolean array result of length n, where result[i] is true if, after giving the ith kid all the extraCandies, they will have the greatest number of candies among all the kids, or false otherwise.
 
 Note that multiple kids can have the greatest number of candies.
-
 
 
 Example 1:
@@ -116,7 +110,6 @@ You have a long flowerbed in which some of the plots are planted, and some are n
 
 Given an integer array flowerbed containing 0's and 1's, where 0 means empty and 1 means not empty, and an integer n, return true if n new flowers can be planted in the flowerbed without violating the no-adjacent-flowers rule and false otherwise.
 
- 
 
 Example 1:
 
@@ -127,7 +120,6 @@ Example 2:
 Input: flowerbed = [1,0,0,0,1], n = 2
 Output: false
  
-
 Constraints:
 
 1 <= flowerbed.length <= 2 * 104
@@ -142,8 +134,6 @@ Given a string s, reverse only all the vowels in the string and return it.
 
 The vowels are 'a', 'e', 'i', 'o', and 'u', and they can appear in both lower and upper cases, more than once.
 
-
-
 Example 1:
 
 Input: s = "hello"
@@ -152,7 +142,6 @@ Example 2:
 
 Input: s = "leetcode"
 Output: "leotcede"
-
 
 Constraints:
 
