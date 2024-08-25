@@ -1,7 +1,7 @@
-QUESTIONS FOR WEEK ONE
+**QUESTIONS FOR WEEK ONE**
 
 =====================================
-QUESTION 1: Merge Strings Alternately:
+**QUESTION 1:** Merge Strings Alternately:
 ======================================
 You are given two strings word1 and word2. Merge the strings by adding letters in alternating order, starting with word1. If a string is longer than the other, append the additional letters onto the end of the merged string.
 
@@ -41,7 +41,7 @@ Constraints:
 word1 and word2 consist of lowercase English letters.
 
 =====================================================
-QUESTION 2: Greatest Common Divisor of Strings.
+**QUESTION 2:** Greatest Common Divisor of Strings.
 =====================================================
 For two strings s and t, we say "t divides s" if and only if s = t + t + t + ... + t + t (i.e., t is concatenated with itself one or more times).
 
@@ -70,7 +70,7 @@ str1 and str2 consist of English uppercase letters.
 
 
 =====================================================
-QUESTION 3: Kids with the Greatest Number of Cnadies.
+**QUESTION 3:** Kids with the Greatest Number of Cnadies.
 =====================================================
 There are n kids with candies. You are given an integer array candies, where each candies[i] represents the number of candies the ith kid has, and an integer extraCandies, denoting the number of extra candies that you have.
 
@@ -110,7 +110,7 @@ n == candies.length
 1 <= extraCandies <= 50
 
 ===============================================
-QUESTION 4: Can Place Flowers.
+**QUESTION 4:** Can Place Flowers.
 ===============================================
 You have a long flowerbed in which some of the plots are planted, and some are not. However, flowers cannot be planted in adjacent plots.
 
@@ -136,7 +136,7 @@ There are no two adjacent flowers in flowerbed.
 0 <= n <= flowerbed.length
 
 =============================================
-QUESTION 5: Reverse Vowels of a String
+**QUESTION 5:** Reverse Vowels of a String
 =============================================
 Given a string s, reverse only all the vowels in the string and return it.
 
