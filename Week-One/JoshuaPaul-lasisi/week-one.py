@@ -21,9 +21,9 @@ def mergeAlternately(word1: str, word2: str) -> str:
 # Execution
 print('--------')
 print('Question 1')
-print(mergeAlternately("abc", "pqr"))  # Output: "apbqcr"
-print(mergeAlternately("ab", "pqrs"))  # Output: "apbqrs"
-print(mergeAlternately("abcd", "pq"))  # Output: "apbqcd"
+print(mergeAlternately("abc", "pqr"))
+print(mergeAlternately("ab", "pqrs"))
+print(mergeAlternately("abcd", "pq")) 
 
 
 
@@ -46,10 +46,9 @@ def gcdOfStrings(str1: str, str2: str) -> str:
 # Execution
 print('--------')
 print('Question 2')
-print(gcdOfStrings("ABCABC", "ABC"))  # Output: "ABC"
-print(gcdOfStrings("ABABAB", "ABAB"))  # Output: "AB"
-print(gcdOfStrings("LEET", "CODE"))    # Output: ""
-
+print(gcdOfStrings("ABCABC", "ABC")) 
+print(gcdOfStrings("ABABAB", "ABAB"))
+print(gcdOfStrings("LEET", "CODE"))
 
 
 
@@ -62,9 +61,9 @@ def kidsWithCandies(candies: list[int], extraCandies: int) -> list[bool]:
 # Execution
 print('--------')
 print('Question 3')
-print(kidsWithCandies([2, 3, 5, 1, 3], 3))  # Output: [true,true,true,false,true]
-print(kidsWithCandies([4, 2, 1, 1, 2], 1))  # Output: [true,false,false,false,false]
-print(kidsWithCandies([12, 1, 12], 10))     # Output: [true,false,true]
+print(kidsWithCandies([2, 3, 5, 1, 3], 3))
+print(kidsWithCandies([4, 2, 1, 1, 2], 1)) 
+print(kidsWithCandies([12, 1, 12], 10))
 
 
 
@@ -83,8 +82,8 @@ def canPlaceFlowers(flowerbed: list[int], n: int) -> bool:
 # Execution
 print('--------')
 print('Question 4')
-print(canPlaceFlowers([1, 0, 0, 0, 1], 1))  # Output: true
-print(canPlaceFlowers([1, 0, 0, 0, 1], 2))  # Output: false
+print(canPlaceFlowers([1, 0, 0, 0, 1], 1))
+print(canPlaceFlowers([1, 0, 0, 0, 1], 2)) 
 
 
 
@@ -110,5 +109,5 @@ def reverseVowels(s: str) -> str:
 # Execution
 print('--------')
 print('Question 5')
-print(reverseVowels("hello"))     # Output: "holle"
-print(reverseVowels("leetcode"))  # Output: "leotcede"
+print(reverseVowels("hello")) 
+print(reverseVowels("leetcode"))
