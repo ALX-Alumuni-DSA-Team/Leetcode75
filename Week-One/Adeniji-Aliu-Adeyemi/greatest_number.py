@@ -5,18 +5,16 @@ class Solution(object):
         :type extraCandies: int
         :rtype: List[bool]
         """
-        # Step 1: Find the maximum number of candies any kid currently has
-        max_candies = max(candies)
-        
-        # Step 2: Check if each kid can have the maximum candies after receiving extraCandies
+        #initialize an empty list
         result = []
-        for candy in candies:
-            if candy + extraCandies >= max_candies:
+        #get a new candy list 
+        new_candies = list(map(lambda x: x+extraCandies, candies))
+        #loop through the new candies and compare with max of the old candies
+        for candy in new_candies:
+            if candy >= max(candies):
                 result.append(True)
             else:
                 result.append(False)
-        
-        # Step 3: Return the result list
         return result
 
 #EXAMPLE USAGE
