@@ -1,0 +1,73 @@
+To solve the problem of reversing the order of words in a string while handling extra spaces (leading, trailing, or multiple spaces between words), we can follow these steps:
+
+### Steps to Solve the Problem
+
+1. **Split the String by Spaces**: Use Python’s built-in string methods to split the input string `s` into words, ignoring extra spaces.
+   
+2. **Reverse the List of Words**: Once we have the list of words, we reverse the order of the words.
+
+3. **Join the Words with a Single Space**: Finally, join the reversed words into a single string, ensuring that there is only one space between the words and no extra spaces at the start or end.
+
+### LeetCode75 Solution in Python
+
+Here’s the Python implementation that follows this approach:
+
+```python
+class Solution:
+    def reverseWords(self, s: str) -> str:
+        # Step 1: Split the string into words, filtering out empty strings caused by multiple spaces
+        words = s.split()
+        
+        # Step 2: Reverse the list of words
+        words.reverse()
+        
+        # Step 3: Join the reversed words into a single string with a single space
+        return ' '.join(words)
+
+# Example usage:
+# solution = Solution()
+# print(solution.reverseWords("the sky is blue"))       # Output: "blue is sky the"
+# print(solution.reverseWords("  hello world  "))       # Output: "world hello"
+# print(solution.reverseWords("a good   example"))      # Output: "example good a"
+```
+
+### Explanation of the Code
+
+1. **`s.split()`**: 
+   - The `split()` method splits the input string into a list of words by spaces. It automatically handles leading, trailing, and multiple spaces by removing empty entries.
+
+2. **`words.reverse()`**: 
+   - The `reverse()` method reverses the order of the words in the list.
+
+3. **`' '.join(words)`**: 
+   - The `join()` method joins the reversed list of words back into a single string with a space between each word.
+
+### Example Walkthrough
+
+#### Example 1:
+- Input: `s = "the sky is blue"`
+- After `split()`: `["the", "sky", "is", "blue"]`
+- After `reverse()`: `["blue", "is", "sky", "the"]`
+- After `join()`: `"blue is sky the"`
+- Output: `"blue is sky the"`
+
+#### Example 2:
+- Input: `s = "  hello world  "`
+- After `split()`: `["hello", "world"]` (leading and trailing spaces are ignored)
+- After `reverse()`: `["world", "hello"]`
+- After `join()`: `"world hello"`
+- Output: `"world hello"`
+
+#### Example 3:
+- Input: `s = "a good   example"`
+- After `split()`: `["a", "good", "example"]` (multiple spaces are reduced to single spaces)
+- After `reverse()`: `["example", "good", "a"]`
+- After `join()`: `"example good a"`
+- Output: `"example good a"`
+
+### Constraints Handling
+
+- **Time Complexity**: The time complexity is \(O(n)\), where \(n\) is the length of the input string. This is because splitting the string and reversing the list both take linear time.
+- **Space Complexity**: The space complexity is \(O(n)\), where \(n\) is the length of the input string, since we are storing the list of words.
+
+This solution handles all the constraints and edge cases efficiently while keeping the implementation simple, adhering to LeetCode75 standards.
